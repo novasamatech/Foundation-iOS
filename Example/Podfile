@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'Foundation-iOS_Example' do
+  pod 'Keystore-iOS', :git => 'https://github.com/novasamatech/Keystore-iOS.git', :tag => '1.0.0'
+  pod 'Foundation-iOS', :path => '../'
+
+  target 'Foundation-iOS_Tests' do
+    inherit! :search_paths
+
+    pod 'Cuckoo'
+    
+  end
+end

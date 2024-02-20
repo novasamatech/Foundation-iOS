@@ -1,0 +1,53 @@
+PODS:
+  - Cuckoo (1.10.3):
+    - Cuckoo/Swift (= 1.10.3)
+  - Cuckoo/Swift (1.10.3)
+  - Foundation-iOS (1.0.0):
+    - Foundation-iOS/DateProcessing (= 1.0.0)
+    - Foundation-iOS/Localization (= 1.0.0)
+    - Foundation-iOS/NotificationHandlers (= 1.0.0)
+    - Foundation-iOS/NumberProcessing (= 1.0.0)
+    - Foundation-iOS/QueryProcessing (= 1.0.0)
+    - Foundation-iOS/Timer (= 1.0.0)
+    - Foundation-iOS/ViewModel (= 1.0.0)
+  - Foundation-iOS/DateProcessing (1.0.0):
+    - Foundation-iOS/Localization
+  - Foundation-iOS/Localization (1.0.0):
+    - Keystore-iOS (~> 1.0.0)
+  - Foundation-iOS/NotificationHandlers (1.0.0)
+  - Foundation-iOS/NumberProcessing (1.0.0)
+  - Foundation-iOS/QueryProcessing (1.0.0)
+  - Foundation-iOS/Timer (1.0.0):
+    - Foundation-iOS/NotificationHandlers
+  - Foundation-iOS/ViewModel (1.0.0)
+  - Keystore-iOS (1.0.0)
+
+DEPENDENCIES:
+  - Cuckoo
+  - Foundation-iOS (from `../`)
+  - Keystore-iOS (from `https://github.com/novasamatech/Keystore-iOS.git`, tag `1.0.0`)
+
+SPEC REPOS:
+  trunk:
+    - Cuckoo
+
+EXTERNAL SOURCES:
+  Foundation-iOS:
+    :path: "../"
+  Keystore-iOS:
+    :git: https://github.com/novasamatech/Keystore-iOS.git
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  Keystore-iOS:
+    :git: https://github.com/novasamatech/Keystore-iOS.git
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  Cuckoo: 930598bd4ae95860c658b3eea30903d946ebef36
+  Foundation-iOS: 054f5089f2693c36180638847af42352951cc227
+  Keystore-iOS: 57d88fd6cfd11c7f70d63d9f443c848aed23ebaa
+
+PODFILE CHECKSUM: af3b642ba9c6bf5151eb88022605f39450006864
+
+COCOAPODS: 1.15.2
