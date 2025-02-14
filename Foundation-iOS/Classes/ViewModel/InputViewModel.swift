@@ -1,4 +1,5 @@
 import Foundation
+import UIKit.UITextInputTraits
 
 /**
  *  Protocol is designed to provide data and accept input from input fields.
