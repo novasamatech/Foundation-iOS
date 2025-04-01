@@ -26,7 +26,7 @@ public extension Localizable {
                 self?.applyLocalization()
             }
 
-            withUnsafePointer(to: LocalizableConstants.localizationManagerKey) {
+            withUnsafePointer(to: &LocalizableConstants.localizationManagerKey) {
                 objc_setAssociatedObject(
                     self,
                     $0,
@@ -39,7 +39,7 @@ public extension Localizable {
         }
 
         get {
-            withUnsafePointer(to: LocalizableConstants.localizationManagerKey) {
+            withUnsafePointer(to: &LocalizableConstants.localizationManagerKey) {
                 return objc_getAssociatedObject(
                     self, $0
                 ) as? LocalizationManagerProtocol
