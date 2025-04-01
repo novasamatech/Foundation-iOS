@@ -2,24 +2,24 @@ PODS:
   - Cuckoo (1.10.3):
     - Cuckoo/Swift (= 1.10.3)
   - Cuckoo/Swift (1.10.3)
-  - Foundation-iOS (1.0.0):
-    - Foundation-iOS/DateProcessing (= 1.0.0)
-    - Foundation-iOS/Localization (= 1.0.0)
-    - Foundation-iOS/NotificationHandlers (= 1.0.0)
-    - Foundation-iOS/NumberProcessing (= 1.0.0)
-    - Foundation-iOS/QueryProcessing (= 1.0.0)
-    - Foundation-iOS/Timer (= 1.0.0)
-    - Foundation-iOS/ViewModel (= 1.0.0)
-  - Foundation-iOS/DateProcessing (1.0.0):
+  - Foundation-iOS (1.0.1):
+    - Foundation-iOS/DateProcessing (= 1.0.1)
+    - Foundation-iOS/Localization (= 1.0.1)
+    - Foundation-iOS/NotificationHandlers (= 1.0.1)
+    - Foundation-iOS/NumberProcessing (= 1.0.1)
+    - Foundation-iOS/QueryProcessing (= 1.0.1)
+    - Foundation-iOS/Timer (= 1.0.1)
+    - Foundation-iOS/ViewModel (= 1.0.1)
+  - Foundation-iOS/DateProcessing (1.0.1):
     - Foundation-iOS/Localization
-  - Foundation-iOS/Localization (1.0.0):
+  - Foundation-iOS/Localization (1.0.1):
     - Keystore-iOS (~> 1.0.0)
-  - Foundation-iOS/NotificationHandlers (1.0.0)
-  - Foundation-iOS/NumberProcessing (1.0.0)
-  - Foundation-iOS/QueryProcessing (1.0.0)
-  - Foundation-iOS/Timer (1.0.0):
+  - Foundation-iOS/NotificationHandlers (1.0.1)
+  - Foundation-iOS/NumberProcessing (1.0.1)
+  - Foundation-iOS/QueryProcessing (1.0.1)
+  - Foundation-iOS/Timer (1.0.1):
     - Foundation-iOS/NotificationHandlers
-  - Foundation-iOS/ViewModel (1.0.0)
+  - Foundation-iOS/ViewModel (1.0.1)
   - Keystore-iOS (1.0.0)
 
 DEPENDENCIES:
@@ -45,7 +45,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cuckoo: 930598bd4ae95860c658b3eea30903d946ebef36
-  Foundation-iOS: 054f5089f2693c36180638847af42352951cc227
+  Foundation-iOS: 654d1ed4e36824e07bdb987c0becf5888e1f3ba6
   Keystore-iOS: 57d88fd6cfd11c7f70d63d9f443c848aed23ebaa
 
 PODFILE CHECKSUM: af3b642ba9c6bf5151eb88022605f39450006864

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Foundation-iOS'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Implementation of commonly used algorithms to avoid boilerplate code.'
 
   s.description      = 'Library contains implementation of commonly used algorithms to reduce duplicated and boilerplate code.'
