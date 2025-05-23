@@ -8,8 +8,9 @@ public protocol WalletMigrationOriginProtocol {
 public final class WalletMigrationOrigin {
     let navigator: WalletMigrationLinkNavigating
 
-    let destinationAppLinkURL: URL
-    let destinationScheme: String
+    public let destinationAppLinkURL: URL
+    public let destinationScheme: String
+    
     let queryFactory: WalletMigrationQueryFactoryProtocol
 
     public init(

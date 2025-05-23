@@ -5,7 +5,7 @@ public protocol WalletMigrationDestinationProtocol {
 }
 
 public final class WalletMigrationDestination {
-    let originScheme: String
+    public let originScheme: String
     let navigator: WalletMigrationLinkNavigating
     let queryFactory: WalletMigrationQueryFactoryProtocol
 
