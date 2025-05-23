@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C0897722DE1157A00F06A0E /* MockWalletMigrationNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0897702DE1157A00F06A0E /* MockWalletMigrationNavigator.swift */; };
 		0C0897732DE1157A00F06A0E /* WalletMigrationProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0897712DE1157A00F06A0E /* WalletMigrationProtocolTests.swift */; };
+		0C0897862DE128C500F06A0E /* MockWalletMigrationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0897842DE128C500F06A0E /* MockWalletMigrationDelegate.swift */; };
+		0C0897872DE128C500F06A0E /* WalletMigrationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0897852DE128C500F06A0E /* WalletMigrationServiceTests.swift */; };
 		0CDB23002B84E27600CA135F /* InputHandlingInitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB22E42B84E27600CA135F /* InputHandlingInitializationTests.swift */; };
 		0CDB23012B84E27600CA135F /* InputViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB22E52B84E27600CA135F /* InputViewModelTests.swift */; };
 		0CDB23022B84E27600CA135F /* NameInputHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB22E62B84E27600CA135F /* NameInputHandlingTests.swift */; };
@@ -53,6 +55,8 @@
 		02ACC0E9A5F93DB5CEA0FB07 /* Pods-Foundation-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foundation-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-Foundation-iOS_Example/Pods-Foundation-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0C0897702DE1157A00F06A0E /* MockWalletMigrationNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWalletMigrationNavigator.swift; sourceTree = "<group>"; };
 		0C0897712DE1157A00F06A0E /* WalletMigrationProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMigrationProtocolTests.swift; sourceTree = "<group>"; };
+		0C0897842DE128C500F06A0E /* MockWalletMigrationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWalletMigrationDelegate.swift; sourceTree = "<group>"; };
+		0C0897852DE128C500F06A0E /* WalletMigrationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMigrationServiceTests.swift; sourceTree = "<group>"; };
 		0CDB22E42B84E27600CA135F /* InputHandlingInitializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHandlingInitializationTests.swift; sourceTree = "<group>"; };
 		0CDB22E52B84E27600CA135F /* InputViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewModelTests.swift; sourceTree = "<group>"; };
 		0CDB22E62B84E27600CA135F /* NameInputHandlingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameInputHandlingTests.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		0C08976F2DE1152000F06A0E /* WalletMigration */ = {
 			isa = PBXGroup;
 			children = (
+				0C0897842DE128C500F06A0E /* MockWalletMigrationDelegate.swift */,
+				0C0897852DE128C500F06A0E /* WalletMigrationServiceTests.swift */,
 				0C0897702DE1157A00F06A0E /* MockWalletMigrationNavigator.swift */,
 				0C0897712DE1157A00F06A0E /* WalletMigrationProtocolTests.swift */,
 			);
@@ -512,6 +518,8 @@
 				0CDB23052B84E27600CA135F /* DuplicatePreprocessorTests.swift in Sources */,
 				0CDB230A2B84E27600CA135F /* LocalizableResourceTests.swift in Sources */,
 				0CDB23112B84E27600CA135F /* CompoundNumberProcessingTests.swift in Sources */,
+				0C0897862DE128C500F06A0E /* MockWalletMigrationDelegate.swift in Sources */,
+				0C0897872DE128C500F06A0E /* WalletMigrationServiceTests.swift in Sources */,
 				0CDB23122B84E27600CA135F /* BigNumberFormatterTests.swift in Sources */,
 				0CDB23142B84E27600CA135F /* TimerConstants.swift in Sources */,
 				0CDB23022B84E27600CA135F /* NameInputHandlingTests.swift in Sources */,
