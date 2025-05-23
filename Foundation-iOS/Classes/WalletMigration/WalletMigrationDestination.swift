@@ -11,8 +11,8 @@ public final class WalletMigrationDestination {
 
     public init(
         originScheme: String,
-        queryFactory: WalletMigrationQueryFactoryProtocol = WalletMigrationDefaultQueryFactory(),
-        navigator: WalletMigrationLinkNavigating = WalletMigrationLinkNavigator()
+        queryFactory: WalletMigrationQueryFactoryProtocol,
+        navigator: WalletMigrationLinkNavigating
     ) {
         self.originScheme = originScheme
         self.queryFactory = queryFactory

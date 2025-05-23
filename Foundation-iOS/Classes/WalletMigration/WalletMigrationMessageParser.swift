@@ -145,7 +145,7 @@ private extension WalletMigrationMessageParser {
     }
 
     func extractRawActionFromDeepLink(url: URL) -> String? {
-        url.path(percentEncoded: false).trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+        url.path.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
     }
 
     func extractRawAction(from url: URL) -> String? {

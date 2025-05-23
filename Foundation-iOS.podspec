@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Ruslan Rezin' => 'ruslan@novawallet.io' }
   s.source           = { :git => 'https://github.com/novasamatech/Foundation-iOS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '16.0'
+  s.ios.deployment_target = '15.0'
 
   s.swift_version = '5.0'
 
