@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Foundation-iOS'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'Implementation of commonly used algorithms to avoid boilerplate code.'
 
   s.description      = 'Library contains implementation of commonly used algorithms to reduce duplicated and boilerplate code.'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Ruslan Rezin' => 'ruslan@novawallet.io' }
   s.source           = { :git => 'https://github.com/novasamatech/Foundation-iOS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '15.0'
+  s.ios.deployment_target = '16.0'
 
   s.swift_version = '5.0'
 
@@ -45,6 +45,15 @@ Pod::Spec.new do |s|
 
   s.subspec 'ViewModel' do |vm|
       vm.source_files = 'Foundation-iOS/Classes/ViewModel/**/*'
+  end
+  
+  s.subspec 'SecureSession' do |ss|
+      ss.source_files = 'Foundation-iOS/Classes/SecureSession/**/*'
+  end
+  
+  s.subspec 'WalletMigration' do |wm|
+      wm.dependency 'Foundation-iOS/SecureSession'
+      wm.source_files = 'Foundation-iOS/Classes/WalletMigration/**/*'
   end
 
   s.test_spec do |ts|

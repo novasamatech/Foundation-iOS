@@ -2,24 +2,29 @@ PODS:
   - Cuckoo (1.10.3):
     - Cuckoo/Swift (= 1.10.3)
   - Cuckoo/Swift (1.10.3)
-  - Foundation-iOS (1.0.1):
-    - Foundation-iOS/DateProcessing (= 1.0.1)
-    - Foundation-iOS/Localization (= 1.0.1)
-    - Foundation-iOS/NotificationHandlers (= 1.0.1)
-    - Foundation-iOS/NumberProcessing (= 1.0.1)
-    - Foundation-iOS/QueryProcessing (= 1.0.1)
-    - Foundation-iOS/Timer (= 1.0.1)
-    - Foundation-iOS/ViewModel (= 1.0.1)
-  - Foundation-iOS/DateProcessing (1.0.1):
+  - Foundation-iOS (1.1.0):
+    - Foundation-iOS/DateProcessing (= 1.1.0)
+    - Foundation-iOS/Localization (= 1.1.0)
+    - Foundation-iOS/NotificationHandlers (= 1.1.0)
+    - Foundation-iOS/NumberProcessing (= 1.1.0)
+    - Foundation-iOS/QueryProcessing (= 1.1.0)
+    - Foundation-iOS/SecureSession (= 1.1.0)
+    - Foundation-iOS/Timer (= 1.1.0)
+    - Foundation-iOS/ViewModel (= 1.1.0)
+    - Foundation-iOS/WalletMigration (= 1.1.0)
+  - Foundation-iOS/DateProcessing (1.1.0):
     - Foundation-iOS/Localization
-  - Foundation-iOS/Localization (1.0.1):
+  - Foundation-iOS/Localization (1.1.0):
     - Keystore-iOS (~> 1.0.0)
-  - Foundation-iOS/NotificationHandlers (1.0.1)
-  - Foundation-iOS/NumberProcessing (1.0.1)
-  - Foundation-iOS/QueryProcessing (1.0.1)
-  - Foundation-iOS/Timer (1.0.1):
+  - Foundation-iOS/NotificationHandlers (1.1.0)
+  - Foundation-iOS/NumberProcessing (1.1.0)
+  - Foundation-iOS/QueryProcessing (1.1.0)
+  - Foundation-iOS/SecureSession (1.1.0)
+  - Foundation-iOS/Timer (1.1.0):
     - Foundation-iOS/NotificationHandlers
-  - Foundation-iOS/ViewModel (1.0.1)
+  - Foundation-iOS/ViewModel (1.1.0)
+  - Foundation-iOS/WalletMigration (1.1.0):
+    - Foundation-iOS/SecureSession
   - Keystore-iOS (1.0.0)
 
 DEPENDENCIES:
@@ -45,9 +50,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cuckoo: 930598bd4ae95860c658b3eea30903d946ebef36
-  Foundation-iOS: 654d1ed4e36824e07bdb987c0becf5888e1f3ba6
+  Foundation-iOS: 5882c807000253d941907cac05095b999b12d73d
   Keystore-iOS: 57d88fd6cfd11c7f70d63d9f443c848aed23ebaa
 
-PODFILE CHECKSUM: af3b642ba9c6bf5151eb88022605f39450006864
+PODFILE CHECKSUM: 65fd390a419ec225c3c5bab74c096e945d31c1eb
 
 COCOAPODS: 1.15.2

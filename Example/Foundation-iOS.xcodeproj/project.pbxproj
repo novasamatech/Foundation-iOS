@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0897722DE1157A00F06A0E /* MockWalletMigrationNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0897702DE1157A00F06A0E /* MockWalletMigrationNavigator.swift */; };
+		0C0897732DE1157A00F06A0E /* WalletMigrationProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0897712DE1157A00F06A0E /* WalletMigrationProtocolTests.swift */; };
 		0CDB23002B84E27600CA135F /* InputHandlingInitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB22E42B84E27600CA135F /* InputHandlingInitializationTests.swift */; };
 		0CDB23012B84E27600CA135F /* InputViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB22E52B84E27600CA135F /* InputViewModelTests.swift */; };
 		0CDB23022B84E27600CA135F /* NameInputHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB22E62B84E27600CA135F /* NameInputHandlingTests.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		02ACC0E9A5F93DB5CEA0FB07 /* Pods-Foundation-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foundation-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-Foundation-iOS_Example/Pods-Foundation-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0C0897702DE1157A00F06A0E /* MockWalletMigrationNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWalletMigrationNavigator.swift; sourceTree = "<group>"; };
+		0C0897712DE1157A00F06A0E /* WalletMigrationProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMigrationProtocolTests.swift; sourceTree = "<group>"; };
 		0CDB22E42B84E27600CA135F /* InputHandlingInitializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHandlingInitializationTests.swift; sourceTree = "<group>"; };
 		0CDB22E52B84E27600CA135F /* InputViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewModelTests.swift; sourceTree = "<group>"; };
 		0CDB22E62B84E27600CA135F /* NameInputHandlingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameInputHandlingTests.swift; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C08976F2DE1152000F06A0E /* WalletMigration */ = {
+			isa = PBXGroup;
+			children = (
+				0C0897702DE1157A00F06A0E /* MockWalletMigrationNavigator.swift */,
+				0C0897712DE1157A00F06A0E /* WalletMigrationProtocolTests.swift */,
+			);
+			path = WalletMigration;
+			sourceTree = "<group>";
+		};
 		0CDB22E32B84E27600CA135F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0C08976F2DE1152000F06A0E /* WalletMigration */,
 				0CDB22F62B84E27600CA135F /* DateProcessing */,
 				0CDB22F12B84E27600CA135F /* Localization */,
 				0CDB22ED2B84E27600CA135F /* Mocks */,
@@ -501,6 +515,8 @@
 				0CDB23122B84E27600CA135F /* BigNumberFormatterTests.swift in Sources */,
 				0CDB23142B84E27600CA135F /* TimerConstants.swift in Sources */,
 				0CDB23022B84E27600CA135F /* NameInputHandlingTests.swift in Sources */,
+				0C0897722DE1157A00F06A0E /* MockWalletMigrationNavigator.swift in Sources */,
+				0C0897732DE1157A00F06A0E /* WalletMigrationProtocolTests.swift in Sources */,
 				0CDB230F2B84E27600CA135F /* TokenFormatterTests.swift in Sources */,
 				0CDB23032B84E27600CA135F /* InputHandlingObserverTests.swift in Sources */,
 				0CDB23132B84E27600CA135F /* CountdownTimerTests.swift in Sources */,
@@ -644,7 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Foundation-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -660,7 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Foundation-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -683,7 +699,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,7 +718,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
