@@ -11,7 +11,7 @@ final class WalletMigrationProtocolTests: XCTestCase {
         
         let sharedNavigator = MockWalletMigrationLinkNavigator()
         
-        let originSession = SecureSessionManager()
+        let originSession = SecureSessionManager.createForWalletMigration()
         let originChannel = WalletMigrationOrigin(
             destinationAppLinkURL: universalLink,
             destinationScheme: destinationScheme,
@@ -19,7 +19,7 @@ final class WalletMigrationProtocolTests: XCTestCase {
             navigator: sharedNavigator
         )
         
-        let destinationSession = SecureSessionManager()
+        let destinationSession = SecureSessionManager.createForWalletMigration()
         let destinationChannel = WalletMigrationDestination(
             originScheme: originScheme,
             queryFactory: WalletMigrationDefaultQueryFactory(),
