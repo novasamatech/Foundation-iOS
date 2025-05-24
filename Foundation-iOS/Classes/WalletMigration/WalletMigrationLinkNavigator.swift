@@ -19,6 +19,6 @@ extension WalletMigrationLinkNavigator: WalletMigrationLinkNavigating {
     }
     
     public func open(_ url: URL) {
-        application.canOpenURL(url)
+        application.open(url)
     }
 }
