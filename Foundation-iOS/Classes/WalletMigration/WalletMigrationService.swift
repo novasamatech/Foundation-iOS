@@ -20,8 +20,14 @@ public final class WalletMigrationService {
 
     private let parser: WalletMigrationMessageParser
 
-    public init(localDeepLinkScheme: String) {
-        parser = WalletMigrationMessageParser(localDeepLinkScheme: localDeepLinkScheme)
+    public init(
+        localDeepLinkScheme: String,
+        queryFactory: WalletMigrationQueryFactoryProtocol
+    ) {
+        parser = WalletMigrationMessageParser(
+            localDeepLinkScheme: localDeepLinkScheme,
+            queryFactory: queryFactory
+        )
     }
 }
 

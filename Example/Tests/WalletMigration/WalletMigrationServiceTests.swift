@@ -20,7 +20,10 @@ final class WalletMigrationServiceTests: XCTestCase {
         
         let expectedMessageContent = WalletMigrationMessage.Start(originScheme: originScheme)
         
-        let destService = WalletMigrationService(localDeepLinkScheme: destinationScheme)
+        let destService = WalletMigrationService(
+            localDeepLinkScheme: destinationScheme,
+            queryFactory: WalletMigrationDefaultQueryFactory()
+        )
         
         // when
         
@@ -55,7 +58,11 @@ final class WalletMigrationServiceTests: XCTestCase {
         
         let expectedMessageContent = WalletMigrationMessage.Start(originScheme: originScheme)
         
-        let destService = WalletMigrationService(localDeepLinkScheme: destinationScheme)
+        let destService = WalletMigrationService(
+            localDeepLinkScheme: destinationScheme,
+            queryFactory: WalletMigrationDefaultQueryFactory()
+        )
+        
         let delegate = MockWalletMigrationDelegate()
         destService.addObserver(delegate)
         
