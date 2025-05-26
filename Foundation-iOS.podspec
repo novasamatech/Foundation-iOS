@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Foundation-iOS'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'Implementation of commonly used algorithms to avoid boilerplate code.'
 
   s.description      = 'Library contains implementation of commonly used algorithms to reduce duplicated and boilerplate code.'
@@ -45,6 +45,15 @@ Pod::Spec.new do |s|
 
   s.subspec 'ViewModel' do |vm|
       vm.source_files = 'Foundation-iOS/Classes/ViewModel/**/*'
+  end
+  
+  s.subspec 'SecureSession' do |ss|
+      ss.source_files = 'Foundation-iOS/Classes/SecureSession/**/*'
+  end
+  
+  s.subspec 'WalletMigration' do |wm|
+      wm.dependency 'Foundation-iOS/SecureSession'
+      wm.source_files = 'Foundation-iOS/Classes/WalletMigration/**/*'
   end
 
   s.test_spec do |ts|
