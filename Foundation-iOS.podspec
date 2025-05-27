@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   end
 
   s.test_spec do |ts|
-      ts.source_files = 'Example/Tests/**/*.swift'
+      ts.source_files = 'Tests/**/*.swift'
       ts.dependency 'Cuckoo'
   end
 

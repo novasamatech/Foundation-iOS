@@ -1,4 +1,5 @@
 import Foundation
+import UIKit.UIApplication
 
 public protocol WalletMigrationLinkNavigating {
     func canOpenURL(_ url: URL) -> Bool
