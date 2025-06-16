@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Foundation-iOS'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'Implementation of commonly used algorithms to avoid boilerplate code.'
 
   s.description      = 'Library contains implementation of commonly used algorithms to reduce duplicated and boilerplate code.'
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   end
 
   s.test_spec do |ts|
-      ts.source_files = 'Example/Tests/**/*.swift'
+      ts.source_files = 'Tests/**/*.swift'
       ts.dependency 'Cuckoo'
   end
 

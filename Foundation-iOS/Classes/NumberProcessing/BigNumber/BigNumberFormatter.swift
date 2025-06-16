@@ -1,3 +1,5 @@
+import Foundation
+
 open class BigNumberFormatter: LocalizableDecimalFormatting {
     private let formatter: LocalizableDecimalFormatting
     private let abbreviations: [BigNumberAbbreviation]
@@ -17,8 +19,13 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
         self.init(abbreviations: abbreviations, formatter: numberFormatter)
     }
 
-    public init(abbreviations: [BigNumberAbbreviation], formatter: LocalizableDecimalFormatting) {
-        self.abbreviations = abbreviations.sorted { abb1, abb2 in abb1.threshold < abb2.threshold }
+    public init(
+        abbreviations: [BigNumberAbbreviation],
+        formatter: LocalizableDecimalFormatting
+    ) {
+        self.abbreviations = abbreviations.sorted { abb1, abb2 in
+            abb1.threshold < abb2.threshold
+        }
         self.formatter = formatter
     }
 
@@ -33,7 +40,9 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
             return nil
         }
 
-        var index = abbreviations.firstIndex { value < $0.threshold } ?? abbreviations.count
+        var index =
+            abbreviations.firstIndex { value < $0.threshold }
+            ?? abbreviations.count
         index = max(0, index - 1)
 
         let abbreviation = abbreviations[index]
