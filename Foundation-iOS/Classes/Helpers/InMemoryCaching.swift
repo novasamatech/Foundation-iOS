@@ -1,8 +1,12 @@
 import Foundation
 
 public class InMemoryCache<K: Hashable, V> {
-    private var cache: [K: V] = [:]
+    private var cache: [K: V]
     private let mutex = NSLock()
+
+    public init() {
+        cache = [:]
+    }
 }
 
 public extension InMemoryCache {
