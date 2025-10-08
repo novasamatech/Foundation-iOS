@@ -13,7 +13,7 @@ public class AnyMapper<T, R>: Mapping {
 
     private let privateMap: (T) -> R
 
-    init<U: Mapping>(mapper: U) where U.InputType == InputType, U.OutputType == OutputType {
+    public init<U: Mapping>(mapper: U) where U.InputType == InputType, U.OutputType == OutputType {
         privateMap = mapper.map
     }
 
