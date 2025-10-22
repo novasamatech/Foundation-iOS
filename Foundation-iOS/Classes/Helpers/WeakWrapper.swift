@@ -17,7 +17,7 @@ public extension [WeakWrapper] {
 public final class WeakObserver {
     public weak var target: AnyObject?
     public let notificationQueue: DispatchQueue
-    let closure: () -> Void
+    public let closure: () -> Void
 
     public init(target: AnyObject, notificationQueue: DispatchQueue, closure: @escaping () -> Void) {
         self.target = target
