@@ -54,3 +54,5 @@ public enum UncertainStorage<T> {
 public enum UncertainStorageError: Error {
     case undefined(String)
 }
+
+extension UncertainStorage: Equatable where T: Equatable {}
