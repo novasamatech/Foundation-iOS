@@ -13,7 +13,7 @@ let package = Package(
             targets: [name]),
     ],
     dependencies: [
-        .package(url: "https://github.com/novasamatech/Keystore-iOS", exact: "1.0.1"),
+        .package(url: "https://github.com/novasamatech/Keystore-iOS", exact: "1.1.0"),
         .package(url: "https://github.com/Brightify/Cuckoo", exact: "1.10.4")
     ],
     targets: [
