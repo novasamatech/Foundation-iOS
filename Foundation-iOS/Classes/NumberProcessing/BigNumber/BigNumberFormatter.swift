@@ -30,7 +30,8 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
     }
 
     open var locale: Locale! = Locale.current
-
+    open var minimumFractionDigits: Int = 0
+    
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -50,6 +51,7 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
         let result = value / abbreviation.divisor
 
         let localFormatter = abbreviation.formatter ?? formatter
+        localFormatter.minimumFractionDigits = minimumFractionDigits
         localFormatter.locale = locale
 
         guard let string = localFormatter.stringFromDecimal(result) else {

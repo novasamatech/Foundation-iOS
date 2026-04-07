@@ -35,6 +35,15 @@ open class DynamicPrecisionFormatter: LocalizableDecimalFormatting {
         }
     }
 
+    public var minimumFractionDigits: Int {
+        get {
+            numberFormatter.minimumFractionDigits
+        }
+        set {
+            numberFormatter.minimumFractionDigits = newValue
+        }
+    }
+    
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -58,7 +67,7 @@ open class DynamicPrecisionFormatter: LocalizableDecimalFormatting {
         let formatterPrecission = min(precision + precisionOffset, Self.maxPrecision - 1)
 
         numberFormatter.maximumFractionDigits = Int(formatterPrecission)
-
+        numberFormatter.minimumFractionDigits = minimumFractionDigits
         return numberFormatter.string(from: value as NSNumber)
     }
 }
