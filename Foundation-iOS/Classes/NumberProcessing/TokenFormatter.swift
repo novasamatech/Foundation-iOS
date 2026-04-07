@@ -21,16 +21,6 @@ open class TokenFormatter: LocalizableDecimalFormatting {
             decimalFormatter.locale = newValue
         }
     }
-    
-    public var minimumFractionDigits: Int {
-        get {
-            decimalFormatter.minimumFractionDigits
-        }
-        
-        set {
-            decimalFormatter.minimumFractionDigits = newValue
-        }
-    }
 
     public init(decimalFormatter: LocalizableDecimalFormatting,
                 tokenSymbol: String,

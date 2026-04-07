@@ -3,8 +3,6 @@ import Foundation
 
 public protocol LocalizableDecimalFormatting: AnyObject {
     var locale: Locale! { get set }
-    var minimumFractionDigits: Int { get set }
-
     func stringFromDecimal(_ value: Decimal) -> String?
 }
 

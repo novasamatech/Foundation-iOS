@@ -7,6 +7,7 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
     public convenience init(
         abbreviations: [BigNumberAbbreviation],
         precision: Int = 1,
+        minimumFractionDigits: Int,
         rounding: NumberFormatter.RoundingMode = .halfUp,
         usesIntGrouping: Bool = false
     ) {
@@ -15,6 +16,7 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
             rounding: rounding,
             usesIntGrouping: usesIntGrouping
         )
+        numberFormatter.minimumFractionDigits = minimumFractionDigits
 
         self.init(abbreviations: abbreviations, formatter: numberFormatter)
     }
@@ -30,7 +32,6 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
     }
 
     open var locale: Locale! = Locale.current
-    open var minimumFractionDigits: Int = 0
     
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -51,7 +52,6 @@ open class BigNumberFormatter: LocalizableDecimalFormatting {
         let result = value / abbreviation.divisor
 
         let localFormatter = abbreviation.formatter ?? formatter
-        localFormatter.minimumFractionDigits = minimumFractionDigits
         localFormatter.locale = locale
 
         guard let string = localFormatter.stringFromDecimal(result) else {
