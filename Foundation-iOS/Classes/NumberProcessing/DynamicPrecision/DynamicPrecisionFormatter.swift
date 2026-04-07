@@ -11,6 +11,7 @@ open class DynamicPrecisionFormatter: LocalizableDecimalFormatting {
 
     public init(
         preferredPrecision: UInt8,
+        minimumFractionDigits: UInt8 = 0,
         preferredPrecisionOffset: UInt8 = 0,
         roundingMode: NumberFormatter.RoundingMode = .halfUp,
         usesIntGrouping: Bool = false
@@ -23,6 +24,7 @@ open class DynamicPrecisionFormatter: LocalizableDecimalFormatting {
             rounding: roundingMode,
             usesIntGrouping: usesIntGrouping
         )
+        numberFormatter.minimumFractionDigits = Int(minimumFractionDigits)
     }
 
     open var locale: Locale! {
@@ -34,7 +36,7 @@ open class DynamicPrecisionFormatter: LocalizableDecimalFormatting {
             numberFormatter.locale = newValue
         }
     }
-
+    
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -58,7 +60,6 @@ open class DynamicPrecisionFormatter: LocalizableDecimalFormatting {
         let formatterPrecission = min(precision + precisionOffset, Self.maxPrecision - 1)
 
         numberFormatter.maximumFractionDigits = Int(formatterPrecission)
-
         return numberFormatter.string(from: value as NSNumber)
     }
 }
